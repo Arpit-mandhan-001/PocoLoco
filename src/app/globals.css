@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-myFont: var(--font-myFont);
+  --font-fredoka: var(--font-fredoka);
+  --font-inter: var(--font-inter);
+  --font-antonio: var(--font-antonio);
+  --font-gambero: var(--font-gambero);
+  --font-bahn: var(--font-bahn);
+  --font-mont: var(--font-mont);
 }
 
 @media (prefers-color-scheme: dark) {
