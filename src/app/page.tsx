@@ -1,9 +1,13 @@
-import Image from "next/image";
+import ImageMarquee from "@/components/about_us_marque";
+import AboutUs from "@/components/AboutUs";
+import InstagramSection from "@/components/InstagramSection";
+import Reservation from "@/components/Reservation";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
     <>
-    <div className="grid justify-center items-center text-6xl gap-3">
+    <div className="grid justify-center items-center text-6xl gap-3 bg-white">
     <div className="flex justify-center">
     <img 
     src={"/images/PocoLoco_Logo.png"} 
@@ -27,8 +31,12 @@ export default function Home() {
     <div className="font-gambero">POCOLOCO PIZZA pocoloco pizza font-gambero</div>
     <div className="font-bahn">POCOLOCO PIZZA pocoloco pizza font-bahn</div>
     <div className="font-mont">POCOLOCO PIZZA pocoloco pizza font-mont</div>
-
     </div>
+    <WhyChooseUs />
+    <Reservation />
+    <InstagramSection />
+    <AboutUs />
+
         </>
   );
 }

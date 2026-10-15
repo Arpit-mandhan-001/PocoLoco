@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGoogle, FaInstagram, FaTiktok } from "react-icons/fa";
+import PizzaMarque from "./PizzaMarque";
 
 // Change these variables to use your preferred fonts
 const FONT_PRIMARY = "font-gambero font-black";
