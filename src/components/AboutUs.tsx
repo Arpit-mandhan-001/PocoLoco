@@ -307,7 +307,7 @@ export default function AboutSection() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="-mt-20">
+      <div className="">
         <ImageMarquee />
       </div>
     </section>
