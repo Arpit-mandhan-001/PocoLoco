@@ -124,7 +124,7 @@ export default function AboutSection() {
   return (
     <section
       ref={root}
-      className="relative isolate w-full overflow-hidden bg-[#FAF7F0] text-[#292521] pt-10"
+      className="relative isolate w-full overflow-hidden bg-[#FAF7F0] text-[#292521] lg:pt-10"
     >
       {/* Background decorations */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
@@ -133,7 +133,7 @@ export default function AboutSection() {
           className="absolute -right-32 top-1/2 h-[34rem] w-[34rem] -translate-y-1/2 rounded-full bg-[#E9B878]/25 blur-3xl sm:h-[44rem] sm:w-[44rem]"
         />
 
-        <div className="absolute -bottom-40 -left-40 h-[26rem] w-[26rem] rounded-full bg-[#B94332]/[0.07] blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 h-[26rem] w-[26rem] rounded-full bg-[#db2627]/[0.07] blur-3xl" />
 
         <div
           className="absolute inset-0 opacity-[0.12]"
@@ -172,7 +172,7 @@ export default function AboutSection() {
           >
             <span className="block font-semibold">Good Food</span>
 
-            <span className="relative font-bold block w-fit pb-5 text-[#B94332]">
+            <span className="relative font-bold block w-fit pb-5 text-[#db2627]">
               Brings People Together
               <svg
                 aria-hidden
@@ -242,12 +242,12 @@ export default function AboutSection() {
                 }}
                 className={`cursor-pointer font-fredoka font-medium select-none rounded-full px-5 py-1.5 transition-colors duration-300 ${
                   i === 1
-                    ? "-rotate-2 bg-[#B94332] text-white shadow-sm hover:bg-[#96382C]"
+                    ? "-rotate-2 bg-[#db2627] text-white shadow-sm hover:bg-[#db2627]"
                     : i === 0
-                      ? "rotate-1 border border-[#B94332]/50 bg-white/70 text-[#96382C] hover:border-[#B94332] hover:bg-[#B94332] hover:text-white"
+                      ? "rotate-1 border border-[#db2627]/50 bg-white/70 text-[#db2627] hover:border-[#db2627] hover:bg-[#db2627] hover:text-white"
                       : i === 2
                         ? "rotate-2 bg-[#E9B878] text-[#39281C] hover:bg-[#DDA65D]"
-                        : " mt-2 ml-2 border border-[#B94332]/50 bg-white/70 text-[#96382C] "
+                        : " mt-2 ml-2 border border-[#db2627]/50 bg-white/70 text-[#db2627] "
                 }`}
               >
                 {t}
@@ -266,7 +266,7 @@ export default function AboutSection() {
           {/* Offset image frame */}
           <div
             aria-hidden
-            className="absolute inset-0 translate-x-4 translate-y-4 rounded-tl-[7rem] border-2 border-[#B94332]/50 sm:translate-x-6 sm:translate-y-6"
+            className="absolute inset-0 translate-x-4 translate-y-4 rounded-tl-[7rem] border-2 border-[#db2627]/50 sm:translate-x-6 sm:translate-y-6"
           />
 
           {/* Main image */}

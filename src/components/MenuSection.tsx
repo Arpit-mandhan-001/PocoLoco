@@ -283,7 +283,7 @@ export default function MenuSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-start gap-2">
-            <span className={`${FONT_SECONDARY} text-xl uppercase tracking-wide text-[#c0452c] sm:text-2xl mb-6`}>
+            <span className={`${FONT_SECONDARY} text-xl uppercase tracking-wide text-[#db2627] sm:text-2xl mb-6`}>
               Our Menu
             </span>
           </div>
@@ -293,7 +293,7 @@ export default function MenuSection() {
           >
             Find Your 
             <br />
-            <span className="font-black text-[clamp(3rem,11vw,5rem)] lg:text-[120px]" style={{ color: "#c0452c" }}>Favorites</span>
+            <span className="font-black text-[clamp(3rem,11vw,5rem)] lg:text-[120px]" style={{ color: "#db2627" }}>Favorites</span>
           </h2>
           <p className="mt-2 text-base text-[#7a6258] sm:text-lg lg:text-xl">
             Freshly made, full of flavor.

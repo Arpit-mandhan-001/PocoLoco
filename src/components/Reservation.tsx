@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FONT_PRIMARY = "font-serif";
+const FONT_PRIMARY = "font-gembero";
 const FONT_SECONDARY = "font-fredoka";
 
 /* Colors used: #db2627 (red) · #f4a261 (orange) · #fdf2e9 (cream) · #2a2f4a (navy) */
@@ -170,7 +170,7 @@ export default function Reservation({
     <section
       id="reservation"
       ref={root}
-      className={`${FONT_SECONDARY}  relative isolate overflow-hidden bg-[#545454] text-[#fdf2e9]`}
+      className={`${FONT_SECONDARY}  relative isolate overflow-hidden bg-[#2e2424] text-[#fdf2e9]`}
     >
       {/* ---------- Decoration ---------- */}
       <div aria-hidden="true" className="pointer-events-none absolute -left-32 top-1/4 -z-10 h-96 w-96 rounded-full bg-[#db2627]/10 blur-3xl" />
@@ -212,7 +212,7 @@ export default function Reservation({
               <span data-line className="block">Book Your</span>
             </span>
             <span className="block overflow-hidden pb-[0.12em]">
-              <span data-line className="block bg-gradient-to-b from-[#fdf2e9] to-[#f4a261] bg-clip-text text-transparent uppercase">
+              <span data-line className="block text-[#b98a4e]">
                 Table
               </span>
             </span>

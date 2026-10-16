@@ -76,7 +76,7 @@ const DECOR = {
 /* ------------------------------------------------------------------ */
 /*  2. SMALL PIECES                                                    */
 /* ------------------------------------------------------------------ */
-const RED = "#e8200c";
+const RED = "#db2627";
 
 /** green divider under the heading */
 function Ornament() {

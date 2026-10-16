@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const navItems = ["Home", "Menu", "About Us", "Careers", "Catering"];
+  const navItems = ["Home", "Menu", "About Us", "Reservation", "Blog"];
 
   useEffect(() => {
     const handleScroll = () => {

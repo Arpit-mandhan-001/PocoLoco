@@ -70,7 +70,7 @@ const PizzaMarque: React.FC<PizzaMarqueProps> = ({ color = "#ffffff" }) => {
         color,
         WebkitTextStroke: "clamp(2px, 0.55vw, 5px)",
       }}
-      className={`${FONT_PRIMARY} bg-[#770606] flex shrink-0 items-center whitespace-nowrap text-[100px] font-bold leading-none tracking-wider sm:text-[120px] md:text-[140px] lg:text-[170px] xl:text-[180px]`}
+      className={`${FONT_PRIMARY} bg-[#db2627] flex shrink-0 items-center whitespace-nowrap text-[100px] font-bold leading-none tracking-wider sm:text-[120px] md:text-[140px] lg:text-[170px] xl:text-[180px]`}
     >
       <span>P</span>
 
