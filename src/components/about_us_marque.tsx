@@ -22,14 +22,14 @@ import { motion } from "framer-motion";
 /*  y       = vertical offset in px, so the row looks hand-placed      */
 /* ------------------------------------------------------------------ */
 const ITEMS = [
-  { src: "/images/footer_bg.jpg", w: 250, h: 360, rotate: -3, y: 0 },
-  { src: "/images/footer_bg.jpg", w: 270, h: 300, rotate: 12, y: 30 },
-  { src: "/images/footer_bg.jpg", w: 330, h: 390, rotate: -6, y: -10 },
-  { src: "/images/footer_bg.jpg", w: 380, h: 260, rotate: 0, y: 10 },
-  { src: "/images/footer_bg.jpg", w: 290, h: 360, rotate: 5, y: -20 },
-  { src: "/images/footer_bg.jpg", w: 330, h: 330, rotate: -4, y: 20 },
-  { src: "/images/footer_bg.jpg", w: 260, h: 340, rotate: 8, y: -5 },
-  { src: "/images/footer_bg.jpg", w: 340, h: 280, rotate: -9, y: 15 },
+  { src: "/images/about1.jpeg", w: 250, h: 360, rotate: -3, y: 0 },
+  { src: "/images/drinks6.jpg", w: 270, h: 300, rotate: 12, y: 30 },
+  { src: "/images/about3.png", w: 330, h: 390, rotate: -6, y: -10 },
+  { src: "/images/drinks3.jpg", w: 380, h: 260, rotate: 0, y: 10 },
+  { src: "/images/about2.jpeg", w: 290, h: 360, rotate: 5, y: -20 },
+  { src: "/images/drinks7.jpeg", w: 330, h: 330, rotate: -4, y: 20 },
+  { src: "/images/chickenwinges.webp", w: 260, h: 340, rotate: 8, y: -5 },
+  { src: "/images/coming-left-1.png", w: 340, h: 280, rotate: -9, y: 15 },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -54,7 +54,8 @@ export default function ImageMarquee() {
           animation: slice-marquee var(--dur, 45s) linear infinite;
           will-change: transform;
         }
-        .slice-marquee-track:hover { animation-play-state: paused; }
+        //   add paused in animation-play-state
+        .slice-marquee-track:hover { animation-play-state:; }
         @media (prefers-reduced-motion: reduce) {
           .slice-marquee-track { animation-play-state: paused; }
         }
@@ -78,9 +79,9 @@ export default function ImageMarquee() {
             >
               <motion.div
                 initial={{ rotate: item.rotate }}
-                whileHover={{ rotate: 0, scale: 1.06 }}
+                // whileHover={{ rotate: 0, scale: 1.06 }}
                 transition={{ type: "spring", stiffness: 220, damping: 18 }}
-                className="relative overflow-hidden border-[4px] border-black bg-neutral-200 md:border-[6px]"
+                className="relative overflow-hidden border-[4px] border-black bg-neutral-200 md:border-[10px]"
                 style={{
                   width: `calc(var(--u) * ${item.w}px)`,
                   height: `calc(var(--u) * ${item.h}px)`,

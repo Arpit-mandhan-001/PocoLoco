@@ -20,8 +20,8 @@ gsap.registerPlugin(ScrollTrigger);
 const FONT_PRIMARY = "font-gambero";
 const FONT_SECONDARY = "font-fredoka";
 
-const SPINACH_IMG = "/images/footer_bg.jpg";
-const PIZZA_SLICE_IMG = "/images/footer_bg.jpg";
+const SPINACH_IMG = "/images/sticker4.avif";
+const PIZZA_SLICE_IMG = "/images/sticker6.avif";
 
 const useIsoLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
@@ -99,28 +99,28 @@ const FEATURES: Feature[] = [
   {
     title: "Hygienic Food",
     text: "Fresh, safe and high-quality ingredients, always.",
-    image: "/images/footer_bg.jpg",
+    image: "/images/meal1.jpeg",
     alt: "Pizza with melted cheese being lifted from the pie",
     Icon: PizzaSliceIcon,
   },
   {
     title: "Fresh Environment",
     text: "A clean, cozy and welcoming space for every guest.",
-    image: "/images/footer_bg.jpg",
+    image: "/images/oven_pizza.jpg",
     alt: "Fresh tomatoes, basil and olive oil on a board",
     Icon: SproutIcon,
   },
   {
     title: "Skilled Chefs",
     text: "Passionate chefs bringing authentic flavors to your plate.",
-    image: "/images/footer_bg.jpg",
+    image: "/images/home-bg-pizza.webp",
     alt: "Pasta in a pan finished with parmesan and basil",
     Icon: ChefIcon,
   },
   {
     title: "Event and Party",
     text: "Perfect for gatherings, celebrations and special moments.",
-    image: "/images/footer_bg.jpg",
+    image: "/images/whyChoose.jpeg",
     alt: "Candle-lit table with pizza and shared dishes",
     Icon: PartyIcon,
   },
@@ -258,7 +258,7 @@ export default function WhyChooseUs() {
       <div className="relative mx-auto max-w-[1320px]">
         {/* ---------- Heading ---------- */}
         <div className="text-center">
-          <div className="flex items-center justify-center gap-4">
+          {/* <div className="flex items-center justify-center gap-4">
             <span data-eyebrow-line className="h-px w-10 origin-right bg-[#b98a4e] sm:w-16" />
             <p
               data-eyebrow-text
@@ -267,7 +267,7 @@ export default function WhyChooseUs() {
               Why choose us
             </p>
             <span data-eyebrow-line className="h-px w-10 origin-left bg-[#b98a4e] sm:w-16" />
-          </div>
+          </div> */}
 
           <h2
             className={`${FONT_PRIMARY} mt-5 text-[2.5rem] leading-[0.95] tracking-tight text-[#1c3b2f] [font-variant-caps:small-caps] sm:text-6xl lg:text-7xl`}
@@ -304,7 +304,7 @@ export default function WhyChooseUs() {
               >
                 {/* Arched image + overlapping badge */}
                 <div className="relative">
-                  <div className="relative isolate aspect-[3/2] overflow-hidden rounded-[48%_48%_0_0/40%_40%_0_0] bg-[#e9e2d3]">
+                  <div className="relative isolate aspect-2.5/2 overflow-hidden rounded-[48%_48%_0_0/40%_40%_0_0] bg-[#e9e2d3]">
                     <motion.div variants={imageV} className="absolute inset-0">
                       <Image
                         src={image}

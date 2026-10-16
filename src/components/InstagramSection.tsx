@@ -23,10 +23,16 @@ const INSTAGRAM_HANDLE = "@slicetown"; // <- update
 const LOGO_SRC = "/images/parrot_logo.png"; // <- update (center of the circle)
 
 // 8 images, put them in /public/images/instagram/
-const IMAGES = Array.from(
-  { length: 8 },
-  (_, i) => `/images/footer_bg.jpg`
-);
+const IMAGES = [
+  "/images/footer_bg.jpg",
+  "/images/drinks2.jpg",
+  "/images/about1.jpeg",
+  "/images/drinks3.jpg",
+  "/images/chickenwinges.webp",
+  "/images/drinks.webp",
+  "/images/restaurant_3.webp",
+  "/images/reservations.jpg",
+];
 
 /* ------------------------------------------------------------------ */
 /*  2. COLUMN CONFIG                                                   */

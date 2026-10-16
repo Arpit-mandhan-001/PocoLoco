@@ -118,7 +118,7 @@ type ReservationProps = {
 
 /* ------------------------------- Component --------------------------------- */
 export default function Reservation({
-  imageSrc = "/images/footer_bg.jpg",
+  imageSrc = "/images/reservations.jpg",
   imageAlt = "Candle-lit restaurant table",
   phone = "(403) 246-2002",
   phoneHref = "tel:+15551234567",
@@ -289,7 +289,7 @@ export default function Reservation({
         </div>
 
         {/* ---- Right: arched image ---- */}
-        <div className="relative h-[460px] sm:h-[620px] lg:h-auto">
+        <div className=" w-full relative h-[460px] sm:h-[620px] lg:h-auto">
           <div className="absolute inset-0 lg:bottom-12 lg:left-6 lg:right-[8%]">
             {/* gold arch outline */}
             <div

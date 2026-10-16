@@ -31,7 +31,7 @@ const Footer = () => {
           </h3>
 
           <div
-            className={`${FONT_SECONDARY} space-y-3 text-base leading-relaxed text-gray-300`}
+            className={`${FONT_SECONDARY} space-y-3 text-base leading-relaxed text-gray-200`}
           >
             <p>Mon - Wed: 11:00 AM - 1:00 AM</p>
             <p>Thu - Fri: 11:00 AM - 02:00 AM</p>
@@ -48,7 +48,7 @@ const Footer = () => {
           />
 
           <address
-            className={`${FONT_SECONDARY} mt-5 text-base leading-7 text-gray-300 not-italic`}
+            className={`${FONT_SECONDARY} mt-5 text-base leading-7 text-gray-200 not-italic`}
           >
             731 6th Ave SW,
             <br />
@@ -70,7 +70,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="text-gray-300 transition-colors duration-300 hover:text-blue-500"
+                className="text-gray-200 transition-colors duration-300 hover:text-blue-500"
               >
                 <FaFacebook size={22} />
               </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-gray-300 transition-colors duration-300 hover:text-pink-500"
+                className="text-gray-200 transition-colors duration-300 hover:text-pink-500"
               >
                 <FaInstagram size={24} />
               </a>
@@ -90,7 +90,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google"
-                className="text-gray-300 transition-colors duration-300 hover:text-red-500"
+                className="text-gray-200 transition-colors duration-300 hover:text-red-500"
               >
                 <FaGoogle size={22} />
               </a>
@@ -100,7 +100,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className="text-gray-300 transition-colors duration-300 hover:text-cyan-400"
+                className="text-gray-200 transition-colors duration-300 hover:text-cyan-400"
               >
                 <FaTiktok size={22} />
               </a>
@@ -114,7 +114,7 @@ const Footer = () => {
             <p className={`${FONT_SECONDARY}`}>
               <a
                 href="tel:+14032462002"
-                className="break-words text-gray-300 transition-colors duration-300 hover:text-white"
+                className="break-words text-gray-200 transition-colors duration-300 hover:text-white"
               >
                 (403) 246-2002
               </a>
@@ -123,7 +123,7 @@ const Footer = () => {
             <p className={`${FONT_SECONDARY}`}>
               <a
                 href="mailto:pocolocopizza@shaw.ca"
-                className="break-all text-gray-300 transition-colors duration-300 hover:text-white"
+                className="break-all text-gray-200 transition-colors duration-300 hover:text-white"
               >
                 pocolocopizza@shaw.ca
               </a>
@@ -133,41 +133,41 @@ const Footer = () => {
       </div>
 
       {/* Divider and Navigation */}
-      <div className="mx-auto mt-12 w-full max-w-7xl border-t border-white/20 pt-6 md:mt-14 lg:mt-16">
+      <div className="mx-auto mt-12 w-full text-white max-w-7xl border-t border-white/20 pt-6 md:mt-14 lg:mt-16">
         <nav
           className={`${FONT_PRIMARY} tracking-wider mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[18px] sm:gap-x-8`}
         >
           <a
             href="/"
-            className="transition-colors duration-300 hover:text-gray-300"
+            className="transition-colors duration-300 hover:text-gray-400"
           >
             Home
           </a>
 
           <a
             href="/menu"
-            className="transition-colors duration-300 hover:text-gray-300"
+            className="transition-colors duration-300 hover:text-gray-400"
           >
             Menu
           </a>
 
           <a
             href="/about"
-            className="transition-colors duration-300 hover:text-gray-300"
+            className="transition-colors duration-300 hover:text-gray-400"
           >
-            About Us
+            About US
           </a>
 
           <a
             href="/contact"
-            className="transition-colors duration-300 hover:text-gray-300"
+            className="transition-colors duration-300 hover:text-gray-400"
           >
             Contact
           </a>
 
           <a
             href="/blogs"
-            className="transition-colors duration-300 hover:text-gray-300"
+            className="transition-colors duration-300 hover:text-gray-400"
           >
             Blogs
           </a>
