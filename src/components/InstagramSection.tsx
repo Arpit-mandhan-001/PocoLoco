@@ -15,12 +15,8 @@ import Image from "next/image";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 
-/* ------------------------------------------------------------------ */
-/*  1. DUMMY PATHS – replace these with your own                       */
-/* ------------------------------------------------------------------ */
-const INSTAGRAM_URL = "https://www.instagram.com/your_handle"; // <- update
-const INSTAGRAM_HANDLE = "@slicetown"; // <- update
-const LOGO_SRC = "/images/parrot_logo.png"; // <- update (center of the circle)
+const INSTAGRAM_URL = "https://www.instagram.com/pocolocopizza_calgary/";
+const LOGO_SRC = "/images/parrot_logo.png";
 
 // 8 images, put them in /public/images/instagram/
 const IMAGES = [
@@ -34,12 +30,7 @@ const IMAGES = [
   "/images/reservations.jpg",
 ];
 
-/* ------------------------------------------------------------------ */
-/*  2. COLUMN CONFIG                                                   */
-/*     direction: -1 = moves UP, 1 = moves DOWN                        */
-/*     speed: pixels per second (keep low = slow & smooth)             */
-/*     offset: starting position (0–1 of one loop) so columns differ   */
-/* ------------------------------------------------------------------ */
+
 const COLUMNS = [
   { direction: -1, speed: 26, offset: 0.0, shift: 0 }, // 1st: down -> top
   { direction: 1, speed: 34, offset: 0.35, shift: 2 }, // 2nd: top -> down
@@ -63,7 +54,7 @@ function RotatingBadge() {
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.97 }}
       transition={{ type: "spring", stiffness: 260, damping: 18 }}
-      className="relative block h-38 w-38 rounded-full border-[2px] border-black bg-[#fbf3df] shadow-[6px_6px_0_#000] sm:h-42 sm:w-42 md:h-50 md:w-50"
+      className="relative block h-32 w-32 rounded-full border-[2px] border-black bg-[#fbf3df] shadow-[6px_6px_0_#000] xs:h-36 xs:w-36 sm:h-42 sm:w-42 md:h-50 md:w-50"
     >
       {/* rotating text ring (infinite) */}
       <motion.svg
@@ -203,18 +194,21 @@ export default function InstagramSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative isolate flex min-h-[120vh] items-center justify-center overflow-hidden bg-[#f4a261] px-4 py-24"
+      className="relative isolate flex min-h-[100svh] items-center justify-center overflow-hidden bg-[#f4a261] px-3 py-16 sm:min-h-[120vh] sm:px-4 sm:py-24"
     >
       {/* ---------- background: 4 moving image columns ---------- */}
       <div
         aria-hidden="true"
-        className="absolute -inset-[14%] -z-10 grid -rotate-[4deg] grid-cols-4 gap-3 md:gap-5"
+        className="absolute -inset-[14%] -z-10 grid -rotate-[4deg] grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-3 md:gap-5"
       >
         {COLUMNS.map((col, c) => {
           // each column starts from a different image so they don't repeat side by side
           const imgs = [...IMAGES.slice(col.shift), ...IMAGES.slice(0, col.shift)];
           return (
-            <div key={c} className="h-full overflow-hidden">
+            <div
+              key={c}
+              className={`h-full overflow-hidden ${c === 3 ? "hidden sm:block" : ""}`}
+            >
               <div
                 ref={(el) => {
                   trackRefs.current[c] = el;
@@ -223,9 +217,9 @@ export default function InstagramSection() {
               >
                 {Array.from({ length: COPIES }).flatMap((_, copy) =>
                   imgs.map((src, i) => (
-                    <div key={`${copy}-${i}`} className="pb-3 md:pb-5">
+                    <div key={`${copy}-${i}`} className="pb-2 sm:pb-3 md:pb-5">
                       <div
-                        className={`relative w-[520px] overflow-hidden  bg-[#c97d3a] ${
+                        className={`relative w-full overflow-hidden bg-[#c97d3a] ${
                           RATIOS[(i + c) % RATIOS.length]
                         }`}
                       >
@@ -233,7 +227,7 @@ export default function InstagramSection() {
                           src={src}
                           alt=""
                           fill
-                          sizes="(min-width: 768px) 25vw, 30vw"
+                          sizes="(min-width: 768px) 25vw, 33vw"
                           className="object-cover"
                           draggable={false}
                         />
@@ -247,14 +241,13 @@ export default function InstagramSection() {
         })}
       </div>
 
-     <div
-  aria-hidden="true"
-  className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(25,12,0,0.25)_0%,rgba(25,12,0,0.20)_50%,transparent_100%)]"
-/>
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(25,12,0,0.25)_0%,rgba(25,12,0,0.20)_50%,transparent_100%)]"
+      />
 
       {/* ---------- foreground content ---------- */}
-      <div className="flex max-w-xl flex-col items-center text-center">
-
+      <div className="flex w-full max-w-xl flex-col items-center text-center">
         <div className="">
           <RotatingBadge />
         </div>

@@ -23,6 +23,21 @@ const Footer = () => {
       {/* Main Content */}
       <div className="mt-2 sm:mt-3 md:mt-5 lg:mt-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-10 text-center md:flex-row md:items-start md:gap-8 lg:gap-16">
         {/* Opening Hours */}
+        <div className="flex w-full min-w-0 flex-col items-center md:flex-1">
+          <img
+            src="/images/PocoLoco_Logo.png"
+            alt="Poco Loco Pizza"
+            className="h-auto w-40 max-w-full object-contain sm:w-48 md:w-44 lg:w-52"
+          />
+
+          <address
+            className={`${FONT_SECONDARY} mt-5 text-base leading-7 text-gray-200 not-italic`}
+          >
+            731 6th Ave SW,
+            <br />
+            Calgary, AB T2P 0T9
+          </address>
+        </div>
         <div className="w-full min-w-0 md:flex-1">
           <h3
             className={`${FONT_PRIMARY} mb-5 text-lg font-semibold tracking-wide`}
@@ -40,21 +55,6 @@ const Footer = () => {
         </div>
 
         {/* Logo and Address */}
-        <div className="flex w-full min-w-0 flex-col items-center md:flex-1">
-          <img
-            src="/images/PocoLoco_Logo.png"
-            alt="Poco Loco Pizza"
-            className="h-auto w-40 max-w-full object-contain sm:w-48 md:w-44 lg:w-52"
-          />
-
-          <address
-            className={`${FONT_SECONDARY} mt-5 text-base leading-7 text-gray-200 not-italic`}
-          >
-            731 6th Ave SW,
-            <br />
-            Calgary, AB T2P 0T9
-          </address>
-        </div>
 
         {/* Contact */}
         <div className="w-full min-w-0 md:flex-1 ">
@@ -133,7 +133,7 @@ const Footer = () => {
       </div>
 
       {/* Divider and Navigation */}
-      <div className="mx-auto mt-12 w-full text-white max-w-7xl border-t border-white/20 pt-6 md:mt-14 lg:mt-16">
+      <div className="mx-auto mt-12 w-full text-whitemax-w-7xl border-t border-white/20 pt-6 md:mt-14 lg:mt-16">
         <nav
           className={`${FONT_PRIMARY} tracking-wider mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[18px] sm:gap-x-8`}
         >
