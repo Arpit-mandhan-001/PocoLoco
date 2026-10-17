@@ -16,7 +16,7 @@ import gsap from "gsap";
 import { motion } from "framer-motion";
 
 const INSTAGRAM_URL = "https://www.instagram.com/pocolocopizza_calgary/";
-const LOGO_SRC = "/images/parrot_logo.png";
+const LOGO_SRC = "https://res.cloudinary.com/ddknybe9p/image/upload/f_auto/q_auto/parrot_logo_qnlzql.png";
 
 // 8 images, put them in /public/images/instagram/
 const IMAGES = [
