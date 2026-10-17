@@ -7,6 +7,7 @@ import Reservation from './Reservation'
 import NewsletterSection from './NewsLetterSection'
 import InstagramSection from './InstagramSection'
 import BlogSection from './Blog'
+import ImageMarquee from './about_us_marque'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <InstagramSection />
       <BlogSection />
       <NewsletterSection />
+      <ImageMarquee />
     </>
   )
 }

@@ -43,7 +43,7 @@ export default function ImageMarquee() {
     <section
       aria-label="Photo gallery"
       // --u scales every size: phone 0.55, tablet 0.75, desktop 1
-      className="relative overflow-hidden bg-transparent py-[calc(var(--u)*56px)] [--u:0.55] sm:[--u:0.75] lg:[--u:1]"
+      className="relative overflow-hidden py-[calc(var(--u)*56px)] [--u:0.55] sm:[--u:0.75] lg:[--u:1] bg-[#f9f3e3]"
     >
       <style>{`
         @keyframes slice-marquee {

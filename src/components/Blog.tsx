@@ -69,8 +69,8 @@ const POSTS = [
 // Decorative images in the corners (transparent PNGs)
 const DECOR = {
   pizza: "/images/sticker3.avif",
-  chicken: "/images/sticker4.avif",
-  leaf: "/images/sticker5.avif",
+  chicken: "/images/sticker7.svg",
+  leaf: "/images/sticker8.svg",
 };
 
 /* ------------------------------------------------------------------ */
@@ -245,9 +245,6 @@ export default function BlogSection() {
         >
           Our Latest <span style={{ color: RED }}>Blogs</span>
         </h2>
-        <div className="mt-4">
-          <Ornament />
-        </div>
       </motion.div>
 
       {/* ---------- slider ---------- */}

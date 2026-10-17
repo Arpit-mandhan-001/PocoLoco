@@ -28,7 +28,7 @@ const Header = () => {
   }, [isOpen]);
 
   const linkClass =
-    "relative font-gambero text-[18px] font-medium uppercase tracking-[0.1em] transition-all duration-300 hover:text-white/60 after:absolute after:-bottom-1.5 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-out hover:after:w-full text-white/90";
+    "relative font-gambero text-[18px]  uppercase tracking-[0.08em] transition-all duration-300 hover:text-white/80 after:absolute after:-bottom-1.5 after:left-0 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-out hover:after:w-full text-white/90";
 
   const getNavHref = (item : string) => {
     switch (item) {
@@ -105,7 +105,7 @@ const Header = () => {
   <div className="hidden shrink-0 lg:block">
     <a
       href="/contact"
-      className={`inline-flex items-center rounded-2xl px-4 py-4 text-[12px] font-[800] uppercase tracking-[0.08em]  transition-all duration-300 hover:bg-[#f4a261]/70 bg-[#f4a261] text-black`}
+      className={`inline-flex font-fredoka items-center rounded-[20px] px-4 py-3 text-[15px] font-[500] uppercase tracking-[0.08em]  transition-all duration-300 hover:bg-[#f4a261]/70 bg-[#f4a261] text-black`}
     >
       Contact Us
     </a>
