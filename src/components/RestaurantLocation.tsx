@@ -5,8 +5,8 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 
-const LEAF_IMAGE = "/images/pizza.avif";
-const PIZZA_IMAGE = "/images/pizza.avif";
+const LEAF_IMAGE = "/images/sticker2.png";
+// const PIZZA_IMAGE = "/images/sticker6.avif";
 
 const RESTAURANT_ADDRESS = "213 W Tomichi Ave, Gunnison, CO 81230, United States";
 
@@ -139,14 +139,14 @@ export default function RestaurantLocation() {
               ref={pizzaRef}
               className="pointer-events-none absolute bottom-[4%] right-[3%] z-0 w-[100px] sm:bottom-[4%] sm:right-[3%] sm:w-[130px] lg:right-[2%] lg:w-[130px] xl:w-[155px] will-change-transform"
             >
-              <Image
-                src={PIZZA_IMAGE}
+              {/* <Image
+                src={""}
                 alt=""
                 width={220}
                 height={220}
                 priority
                 className="h-auto w-full object-contain"
-              />
+              /> */}
             </div>
           </div>
         </div>

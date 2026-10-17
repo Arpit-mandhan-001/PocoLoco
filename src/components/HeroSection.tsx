@@ -12,7 +12,7 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 h-[115%] w-full object-cover scale-100"
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/ddknybe9p/video/upload/v1792209030/hero_hugnl5.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay */}

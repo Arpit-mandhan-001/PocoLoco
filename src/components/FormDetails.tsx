@@ -113,7 +113,7 @@ export default function FormDetails() {
   className="relative w-full min-h-[380px] lg:min-h-[620px] overflow-hidden"
 >
   <Image
-    src="/images/footer_bg.jpg"
+    src="/images/reservations.jpg"
     alt="Modern Conference Interior Space"
     fill
     priority
